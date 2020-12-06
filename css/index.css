@@ -26,3 +26,9 @@ td{
     width: 400px;
     height: 70px;
 }
+
+footer{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.7em;
+}
