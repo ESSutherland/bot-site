@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <title>SpiderPig Bot Site</title>
+    <title>Command Help</title>
 
     <link rel="stylesheet" href="css/index.css">
 
@@ -11,7 +11,7 @@
     <body>
         <div>Commands in <span class="mod">BOLD and BLUE</span> are only usable by server moderators.</div>
 
-        <div id="base-commands">
+        <div id="general-commands">
             <h2>General Commands</h2>
             <table>
                 <thead>
@@ -51,6 +51,141 @@
                         <td>Modules</td>
                         <td>List all modules and their status.</td>
                         <td id="modules-cmd"></td>
+                    </tr>
+                    <tr class="mod">
+                        <td>Lookup</td>
+                        <td>Lookup a discord user via user ID.</td>
+                        <td id="lookup-cmd"></td>
+                    </tr>
+                    <tr class="mod">
+                        <td>Stop</td>
+                        <td>Stops the bot (Don't use this).</td>
+                        <td id="stop-cmd"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="color-commands">
+            <h2>Color Commands</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Command Name</td>
+                        <th>Command Info</td>
+                        <th>Command Format</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Color</td>
+                        <td>Allows Nitro Boosters to change the color of their name in the server.</td>
+                        <td id="color-cmd"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="level-commands">
+            <h2>Level Commands</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Command Name</td>
+                        <th>Command Info</td>
+                        <th>Command Format</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Level</td>
+                        <td>Displays the current level of the user or mentioned user(s).</td>
+                        <td id="level-cmd"></td>
+                    </tr>
+                    <tr>
+                        <td>LevelTop</td>
+                        <td>Displays the top 5 users with the highest level.</td>
+                        <td id="leveltop-cmd"></td>
+                    </tr>
+                    <tr class="mod">
+                        <td>AddExp</td>
+                        <td>Adds the specified amount of experience to the user or mentioned user.</td>
+                        <td id="addexp-cmd"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="minecraft-commands">
+            <h2>Minecraft Commands</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Command Name</td>
+                        <th>Command Info</td>
+                        <th>Command Format</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Whitelist</td>
+                        <td>Allows subscribers to whitelist themselves on the linked Minecraft server.</td>
+                        <td id="whitelist-cmd"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="custom-commands">
+            <h2>Custom Commands Commands</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Command Name</td>
+                        <th>Command Info</td>
+                        <th>Command Format</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Commands</td>
+                        <td>Shows list of the custom commands on the server.</td>
+                        <td id="commands-cmd"></td>
+                    </tr>
+                    <tr class="mod">
+                        <td>Command</td>
+                        <td>Create a custom command to use in the server. Flags: -a = everyone, -b = boosters, -s = subs, @ a user for a private command.</td>
+                        <td id="command-cmd"></td>
+                    </tr>
+                    <tr class="mod">
+                        <td>Update</td>
+                        <td>Update the response to a custom command.</td>
+                        <td id="update-cmd"></td>
+                    </tr>
+                    <tr class="mod">
+                        <td>Delete</td>
+                        <td>Delete a custom command from the server.</td>
+                        <td id="delete-cmd"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="animalcrossing-commands">
+            <h2>Animal Crossing Commands</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Command Name</td>
+                        <th>Command Info</td>
+                        <th>Command Format</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Villager</td>
+                        <td>Get information about the specified Animal Crossing: New Horizons villager.</td>
+                        <td id="villager-cmd"></td>
                     </tr>
                 </tbody>
             </table>
