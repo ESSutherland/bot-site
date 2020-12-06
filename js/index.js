@@ -5,10 +5,11 @@ $(document).ready(function(){
     var bot_name = url.searchParams.get("bot_name")
     var prefix = url.searchParams.get("prefix");
 
+    if(!prefix){
+        prefix=""
+    }
+
     $("#head").html("<h1>Commands for " + bot_name + "</h1>")
-
-    console.log(prefix)
-
     $("#bot-cmd").text(prefix + "bot")
     $("#help-cmd").text(prefix + "help")
     $("#whois-cmd").text(prefix + "whois [@user] - ([]=optional)")
