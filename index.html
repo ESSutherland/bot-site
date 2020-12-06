@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <title>SpiderPig Bot Site</title>
+
+    <script>
+        var url_string = window.location.href;
+        var url = new URL(url_string);
+        var test = url.searchParams.get("test")
+        var test2 = url.searchParams.get("test2");
+
+        if(test){
+            console.log("test = ", test);
+        }
+
+        if(test2){
+            console.log("test2 = ", test2);
+        }
+    </script>
+
+    <head>
+        <h1>Commands</h1>
+    </head>
+
+    
+</html>
