@@ -1,24 +1,59 @@
 <!DOCTYPE html>
     <title>SpiderPig Bot Site</title>
 
-    <script>
-        var url_string = window.location.href;
-        var url = new URL(url_string);
-        var test = url.searchParams.get("test")
-        var test2 = url.searchParams.get("test2");
+    <link rel="stylesheet" href="css/index.css">
 
-        if(test){
-            console.log("test = ", test);
-        }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 
-        if(test2){
-            console.log("test2 = ", test2);
-        }
-    </script>
+    <div id="head">Commands</div>
 
-    <head>
-        <h1>Commands</h1>
-    </head>
+    <body>
+        <div>Commands in <span class="mod">BOLD and BLUE</span> are only usable by server moderators.</div>
 
-    
+        <div id="base-commands">
+            <h2>General Commands</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Command Name</td>
+                        <th>Command Info</td>
+                        <th>Command Format</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bot</td>
+                        <td>Get information about the bot.</td>
+                        <td id="bot-cmd"></td>
+                    </tr>
+                    <tr>
+                        <td>Help</td>
+                        <td>Get information about commands.</td>
+                        <td id="help-cmd"></td>
+                    </tr>
+                    <tr>
+                        <td>WhoIs</td>
+                        <td>Get information about the user.</td>
+                        <td id="whois-cmd"></td>
+                    </tr>
+                    <tr class="mod">
+                        <td>Purge</td>
+                        <td>Purge a specified number of message by the user or tagged user out of the last 100 messages.</td>
+                        <td id="purge-cmd"></td>
+                    </tr>
+                    <tr class="mod">
+                        <td>Module</td>
+                        <td>Enable or disable feature modules in the bot.</td>
+                        <td id="module-cmd"></td>
+                    </tr>
+                    <tr class="mod">
+                        <td>Modules</td>
+                        <td>List all modules and their status.</td>
+                        <td id="modules-cmd"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
 </html>
