@@ -3,22 +3,26 @@
 body{
     font-family: 'Hind', sans-serif;
     font-size: 1.3em;
+    background-color: #2C2F33;
+    color: white;
+    text-align: center;
 }
 
 .mod{
     font-weight: bold;
-    background-color: #BBF6FF;
+    background-color: #7289DA;
+    padding: 0 10px 0 10px;
 }
 
 table{
     border-collapse: separate;
-    border: black 2px solid;
+    border:  #23272A 2px solid;
+    margin: 0 auto 0 auto;
 }
 
 th{
-    text-align: left;
     padding: 10px 10px 10px 10px;
-    background-color: #BEBEBE;
+    background-color: #23272A;
 }
 
 td{
