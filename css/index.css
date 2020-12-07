@@ -8,12 +8,6 @@ body{
     text-align: center;
 }
 
-.mod{
-    font-weight: bold;
-    background-color: #7289DA;
-    padding: 0 10px 0 10px;
-}
-
 table{
     border-collapse: separate;
     border:  #23272A 2px solid;
@@ -35,4 +29,14 @@ footer{
     text-align: center;
     padding-top: 20px;
     font-size: 0.7em;
+}
+
+.normal{
+    background-color: #424549;
+}
+
+.mod{
+    font-weight: bold;
+    background-color: #7289DA;
+    padding: 0 10px 0 10px;
 }
