@@ -25,42 +25,42 @@
                     <tr class="normal">
                         <td>Bot</td>
                         <td>Get information about the bot.</td>
-                        <td id="bot-cmd"></td>
+                        <td><span class="prefix"></span>bot</td>
                     </tr>
                     <tr class="normal">
                         <td>Help</td>
                         <td>Get information about commands.</td>
-                        <td id="help-cmd"></td>
+                        <td><span class="prefix"></span>help</td>
                     </tr>
                     <tr class="normal">
                         <td>WhoIs</td>
                         <td>Get information about the user.</td>
-                        <td id="whois-cmd"></td>
+                        <td><span class="prefix"></span>whois [@user] - ([]=optional)</td>
                     </tr>
                     <tr class="mod">
                         <td>Purge</td>
                         <td>Purge a specified number of message by the user or tagged user out of the last 100 messages.</td>
-                        <td id="purge-cmd"></td>
+                        <td><span class="prefix"></span>purge {amount} [@user] - ({}=required, []=optional)</td>
                     </tr>
                     <tr class="mod">
                         <td>Module</td>
                         <td>Enable or disable feature modules in the bot.</td>
-                        <td id="module-cmd"></td>
+                        <td><span class="prefix"></span>module {name} {enable/disable} - ({}=required)</td>
                     </tr>
                     <tr class="mod">
                         <td>Modules</td>
                         <td>List all modules and their status.</td>
-                        <td id="modules-cmd"></td>
+                        <td><span class="prefix"></span>modules</td>
                     </tr>
                     <tr class="mod">
                         <td>Lookup</td>
                         <td>Lookup a discord user via user ID.</td>
-                        <td id="lookup-cmd"></td>
+                        <td><span class="prefix"></span>lookup {user ID} - ({}=required)</td>
                     </tr>
                     <tr class="mod">
                         <td>Stop</td>
                         <td>Stops the bot (Don't use this).</td>
-                        <td id="stop-cmd"></td>
+                        <td><span class="prefix"></span>stop</td>
                     </tr>
                 </tbody>
             </table>
@@ -80,7 +80,7 @@
                     <tr class="normal">
                         <td>Color</td>
                         <td>Allows Nitro Boosters to change the color of their name in the server.</td>
-                        <td id="color-cmd"></td>
+                        <td><span class="prefix"></span>color/colour {hex} - ({}=required)</td>
                     </tr>
                 </tbody>
             </table>
@@ -100,17 +100,17 @@
                     <tr class="normal">
                         <td>Level</td>
                         <td>Displays the current level of the user or mentioned user(s).</td>
-                        <td id="level-cmd"></td>
+                        <td><span class="prefix"></span>level [@user] - ([]=optional)</td>
                     </tr>
                     <tr class="normal">
                         <td>LevelTop</td>
                         <td>Displays the top 5 users with the highest level.</td>
-                        <td id="leveltop-cmd"></td>
+                        <td><span class="prefix"></span>leveltop</td>
                     </tr>
                     <tr class="mod">
                         <td>AddExp</td>
                         <td>Adds the specified amount of experience to the user or mentioned user.</td>
-                        <td id="addexp-cmd"></td>
+                        <td><span class="prefix"></span>addexp {amount} [@user] - ({}=required, []=optional)</td>
                     </tr>
                 </tbody>
             </table>
@@ -130,14 +130,14 @@
                     <tr class="normal">
                         <td>Whitelist</td>
                         <td>Allows subscribers to whitelist themselves on the linked Minecraft server.</td>
-                        <td id="whitelist-cmd"></td>
+                        <td><span class="prefix"></span>whitelist {MC username} - ({}=required)</td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
         <div id="custom-commands">
-            <h2>Custom Commands Commands</h2>
+            <h2>Custom Command Commands</h2>
             <table>
                 <thead>
                     <tr class="normal">
@@ -150,22 +150,22 @@
                     <tr class="normal">
                         <td>Commands</td>
                         <td>Shows list of the custom commands on the server.</td>
-                        <td id="commands-cmd"></td>
+                        <td><span class="prefix"></span>commands</td>
                     </tr>
                     <tr class="mod">
                         <td>Command</td>
                         <td>Create a custom command to use in the server. Flags: -a = everyone, -b = boosters, -s = subs, @ a user for a private command.</td>
-                        <td id="command-cmd"></td>
+                        <td><span class="prefix"></span>command {permission flag} {command} {response} - ({}=required)</td>
                     </tr>
                     <tr class="mod">
                         <td>Update</td>
                         <td>Update the response to a custom command.</td>
-                        <td id="update-cmd"></td>
+                        <td><span class="prefix"></span>update {command} {response} - ({}=required)</td>
                     </tr>
                     <tr class="mod">
                         <td>Delete</td>
                         <td>Delete a custom command from the server.</td>
-                        <td id="delete-cmd"></td>
+                        <td><span class="prefix"></span>delete {command} - ({}=required)</td>
                     </tr>
                 </tbody>
             </table>
@@ -185,7 +185,7 @@
                     <tr class="normal">
                         <td>Villager</td>
                         <td>Get information about the specified Animal Crossing: New Horizons villager.</td>
-                        <td id="villager-cmd"></td>
+                        <td><span class="prefix"></span>villager {name} - ({}=required)</td>
                     </tr>
                 </tbody>
             </table>
