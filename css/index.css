@@ -11,7 +11,8 @@ body{
 table{
     border-collapse: separate;
     border:  #23272A 2px solid;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 100px auto;
+    box-shadow: 8px 8px 5px #23272A;
 }
 
 th{
@@ -26,9 +27,10 @@ td{
 }
 
 footer{
+    background-color: #23272A;
     text-align: center;
-    padding-top: 20px;
     font-size: 0.7em;
+    padding: 10px 0 10px 0;
 }
 
 .normal{
@@ -39,4 +41,27 @@ footer{
     font-weight: bold;
     background-color: #7289DA;
     padding: 0 10px 0 10px;
+}
+
+#head {
+    font-size: 1.3em;
+}
+
+#header{
+    background-color: #424549;
+    margin: 0 auto 100px auto;
+    padding: 0 0 30px 0;
+    border:  #23272A 2px solid;
+    box-shadow: 8px 8px 5px #23272A;
+    border-collapse: collapse;
+    border-radius: 50px;
+    width: 1300px;
+}
+
+#PreciousBot{
+    color: #22d2e6;
+}
+
+#ZaddyBot{
+    color: #b321fc;
 }

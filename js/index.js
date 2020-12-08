@@ -34,6 +34,6 @@ $(document).ready(function(){
     }
 
 
-    $("#head").html("<h1>Commands for " + bot_name + "</h1>")
+    $("#head").html("<h1>Commands for <span id=\"" + bot_name + "\">" + bot_name + "</span></h1>")
     $(".prefix").text(prefix)
 });
