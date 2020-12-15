@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    var url_string = window.location.href;
+    var url_string = window.location.href
     var url = new URL(url_string);
 
     var bot_name = url.searchParams.get("bot_name")
-    var prefix = url.searchParams.get("prefix");
+    var prefix = url.searchParams.get("prefix")
     var color = url.searchParams.get("color")
     var levels = url.searchParams.get("levels")
     var minecraft = url.searchParams.get("minecraft")
