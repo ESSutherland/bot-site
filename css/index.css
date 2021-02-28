@@ -15,6 +15,15 @@ table{
     box-shadow: 8px 8px 5px #23272A;
 }
 
+ul{
+    margin: auto;
+    list-style: none;
+}
+
+li{
+    padding: 5px 0 5px 0;
+}
+
 th{
     padding: 10px 10px 10px 10px;
     background-color: #23272A;
@@ -37,9 +46,21 @@ footer{
     background-color: #424549;
 }
 
+.booster{
+    font-weight: bold;
+    background-color: #da72bb;
+    padding: 0 10px 0 10px;
+}
+
 .mod{
     font-weight: bold;
-    background-color: #7289DA;
+    background-color: #4fc062;
+    padding: 0 10px 0 10px;
+}
+
+.admin{
+    font-weight: bold;
+    background-color: #c45a4b;
     padding: 0 10px 0 10px;
 }
 

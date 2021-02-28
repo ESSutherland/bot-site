@@ -9,6 +9,8 @@ $(document).ready(function(){
     var minecraft = url.searchParams.get("minecraft")
     var custom = url.searchParams.get("custom")
     var animalcrossing = url.searchParams.get("animalcrossing")
+    var boostmessage = url.searchParams.get("boostmessage")
+    var anime = url.searchParams.get("anime")
 
     if(!prefix){
         prefix=""
@@ -31,6 +33,14 @@ $(document).ready(function(){
 
     if(animalcrossing != 1){
         $("#animalcrossing-commands").hide()
+    }
+
+    if(boostmessage != 1){
+        $("#boostmessage-commands").hide()
+    }
+
+    if(anime != 1){
+        $("#anime-commands").hide()
     }
 
 
