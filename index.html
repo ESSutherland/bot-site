@@ -15,6 +15,7 @@
                 <li><span class="booster">BOOSTERS</span></li>
                 <li><span class="mod">MODERATORS</span></li>
                 <li><span class="admin">ADMINS</span></li>
+                <li><span class="sub">SUBSCRIBERS</span></li>
             </ul>
         </div>
         
@@ -42,47 +43,67 @@
                     <tr class="normal">
                         <td>WhoIs</td>
                         <td>Get information about the user.</td>
-                        <td><span class="prefix"></span>whois [@User] - ([]=optional)</td>
+                        <td><span class="prefix"></span>whois {@User}</td>
                     </tr>
                     <tr class="mod">
                         <td>Lookup</td>
                         <td>Lookup a discord user via user ID.</td>
-                        <td><span class="prefix"></span>lookup {User ID} - ({}=required)</td>
+                        <td><span class="prefix"></span>lookup {User ID}</td>
+                    </tr>
+                    <tr class="mod">
+                        <td>Ban</td>
+                        <td>Ban a user from the server using their discord ID.</td>
+                        <td><span class="prefix"></span>ban {User ID} {Reason}</td>
+                    </tr>
+                    <tr class="mod">
+                        <td>MassBan</td>
+                        <td>Ban multiple users from the server using a username.</td>
+                        <td><span class="prefix"></span>massban {Username} {Reason}</td>
+                    </tr>
+                    <tr class="mod">
+                        <td>AutoBan</td>
+                        <td>Add a username to a list that will be auto banned upon joining the server.</td>
+                        <td><span class="prefix"></span>autoban {Username}</td>
+                    </tr>
+                    <tr class="mod">
+                        <td>UnAutoBan</td>
+                        <td>Remove a username form the auto ban list.</td>
+                        <td><span class="prefix"></span>unautoban {Username}</td>
                     </tr>
                     <tr class="admin">
                         <td>Enable</td>
                         <td>Enables a feature module in the bot.</td>
-                        <td><span class="prefix"></span>enable {Module Name} - ({}=required)</td>
+                        <td><span class="prefix"></span>enable {Module Name}</td>
                     </tr>
                     <tr class="admin">
                         <td>Disable</td>
                         <td>Disables a feature module in the bot.</td>
-                        <td><span class="prefix"></span>disable {Module Name} - ({}=required)</td>
+                        <td><span class="prefix"></span>disable {Module Name}</td>
                     </tr>
                     <tr class="admin">
                         <td>Reload</td>
                         <td>Reloads a feature module in the bot.</td>
-                        <td><span class="prefix"></span>reload {Module Name} - ({}=required)</td>
+                        <td><span class="prefix"></span>reload {Module Name}</td>
                     </tr>
                     <tr class="admin">
                         <td>Modules</td>
                         <td>List all modules and their status.</td>
-                        <td><span class="prefix"></span>modules [Page] - ([]=optional)</td>
+                        <td><span class="prefix"></span>modules</td>
                     </tr>
                     <tr class="admin">
                         <td>SetRole</td>
                         <td>Assign the specified role to a defined role variable in the bot.</td>
-                        <td><span class="prefix"></span>setrole {Role Name} {@Role} - ({}=required)</td>
+                        <td><span class="prefix"></span>setrole {Role Name} {@Role}</td>
                     </tr>
                     <tr class="admin">
                         <td>SetChannel</td>
-                        <td>Assign the specified role to a defined role variable in the bot.</td>
-                        <td><span class="prefix"></span>sechannel {Channel Name} {#Channel} - ({}=required)</td>
+                        <td>Assign the specified channel to a defined channel variable in the bot.</td>
+                        <td><span class="prefix"></span>sechannel {Channel Name} {#Channel}</td>
                     </tr>
                     <tr class="admin">
                         <td>Status</td>
                         <td>Change the playing status of the bot to the specified message.</td>
-                        <td><span class="prefix"></span>status {Message} - ({}=required)</td>
+                        <td><span class="prefix"></span>status {Message}</td>
                     </tr>
                 </tbody>
             </table>
@@ -102,7 +123,7 @@
                     <tr class="booster">
                         <td>Color</td>
                         <td>Allows Nitro Boosters to change the color of their name in the server.</td>
-                        <td><span class="prefix"></span>color/colour {Hex} - ({}=required)</td>
+                        <td><span class="prefix"></span>color {Hex}</td>
                     </tr>
                 </tbody>
             </table>
@@ -121,18 +142,18 @@
                 <tbody>
                     <tr class="normal">
                         <td>Level</td>
-                        <td>Displays the current level of the user or mentioned user(s).</td>
-                        <td><span class="prefix"></span>level [@User] - ([]=optional)</td>
+                        <td>Displays the current level of the user.</td>
+                        <td><span class="prefix"></span>level</td>
                     </tr>
                     <tr class="normal">
-                        <td>LevelTop</td>
-                        <td>Displays the top 5 users with the highest level.</td>
-                        <td><span class="prefix"></span>leveltop</td>
+                        <td>Leaderboard</td>
+                        <td>Displays leaderboard of player levels in the server.</td>
+                        <td><span class="prefix"></span>leaderboard</td>
                     </tr>
                     <tr class="admin">
                         <td>SetExp</td>
                         <td>Set the amount of experience that each level takes.</td>
-                        <td><span class="prefix"></span>setexp {Exp Amount} - ({}=required)</td>
+                        <td><span class="prefix"></span>setexp {Exp Amount}</td>
                     </tr>
                 </tbody>
             </table>
@@ -149,15 +170,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="normal">
+                    <tr class="sub">
                         <td>Whitelist</td>
                         <td>Allows subscribers to whitelist themselves on the linked Minecraft server.</td>
-                        <td><span class="prefix"></span>whitelist {MC Username} - ({}=required)</td>
+                        <td><span class="prefix"></span>whitelist {MC Username}</td>
                     </tr>
                     <tr class="admin">
                         <td>SetRCON</td>
                         <td>Allows subscribers to whitelist themselves on the linked Minecraft server.</td>
-                        <td><span class="prefix"></span>setrcon {IP} {Port} {Password} - ({}=required)</td>
+                        <td><span class="prefix"></span>setrcon {IP} {Port} {Password}</td>
                     </tr>
                 </tbody>
             </table>
@@ -181,13 +202,13 @@
                     </tr>
                     <tr class="mod">
                         <td>Command</td>
-                        <td>Create a custom command to use in the server. Flags: -a = everyone, -b = boosters, -s = subs, -m = mods, @ a user for a private command.</td>
-                        <td><span class="prefix"></span>command {Command Name} {Permission Flag} {Response} - ({}=required)</td>
+                        <td>Create a custom command to use in the server.</td>
+                        <td><span class="prefix"></span>command {Command Name} {Permission Flag} {Response}</td>
                     </tr>
                     <tr class="mod">
                         <td>Delete</td>
                         <td>Delete a custom command from the server.</td>
-                        <td><span class="prefix"></span>delete {Command Name} - ({}=required)</td>
+                        <td><span class="prefix"></span>delete {Command Name}</td>
                     </tr>
                 </tbody>
             </table>
@@ -207,12 +228,7 @@
                     <tr class="normal">
                         <td>Villager</td>
                         <td>Get information about the specified Animal Crossing: New Horizons villager.</td>
-                        <td><span class="prefix"></span>villager {Villager Name} - ({}=required)</td>
-                    </tr>
-                    <tr class="admin">
-                        <td>UpdateVillagers</td>
-                        <td>Refreshes the database of villagers and retrieves new data.</td>
-                        <td><span class="prefix"></span>updatevillagers</td>
+                        <td><span class="prefix"></span>villager {Villager Name}</td>
                     </tr>
                 </tbody>
             </table>
@@ -232,7 +248,7 @@
                     <tr class="admin">
                         <td>BoostMessage</td>
                         <td>Set the message that is sent in the defined general channel when a user boosts the server.</td>
-                        <td><span class="prefix"></span>villager {Villager Name} - ({}=required)</td>
+                        <td><span class="prefix"></span>boostmessage {Message}</td>
                     </tr>
                 </tbody>
             </table>
@@ -252,12 +268,32 @@
                     <tr class="normal">
                         <td>Anime</td>
                         <td>Display info about a specified anime (via MyAnimeList).</td>
-                        <td><span class="prefix"></span>anime {Anime Name} - ({}=required)</td>
+                        <td><span class="prefix"></span>anime {Anime Name}</td>
                     </tr>
                     <tr class="normal">
                         <td>Manga</td>
                         <td>Display info about a specified manga (via MyAnimeList).</td>
-                        <td><span class="prefix"></span>manga {Manga Name} - ({}=required)</td>
+                        <td><span class="prefix"></span>manga {Manga Name}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="pokemon-commands">
+            <h2>Pokemon Commands</h2>
+            <table>
+                <thead>
+                    <tr class="normal">
+                        <th>Command Name</td>
+                        <th>Command Info</td>
+                        <th>Command Format</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="normal">
+                        <td>Pokemon</td>
+                        <td>Get information about the specified Pokemon.</td>
+                        <td><span class="prefix"></span>pokemon {Name or ID}</td>
                     </tr>
                 </tbody>
             </table>

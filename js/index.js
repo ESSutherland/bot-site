@@ -3,7 +3,7 @@ $(document).ready(function(){
     var url = new URL(url_string);
 
     var bot_name = url.searchParams.get("bot_name")
-    var prefix = url.searchParams.get("prefix")
+    var prefix = "/"
     var color = url.searchParams.get("color")
     var levels = url.searchParams.get("levels")
     var minecraft = url.searchParams.get("minecraft")
@@ -43,7 +43,12 @@ $(document).ready(function(){
         $("#anime-commands").hide()
     }
 
+    if(pokemon != 1){
+        $("#pokemon-commands").hide()
+    }
+
 
     $("#head").html("<h1>Commands for <span id=\"" + bot_name + "\">" + bot_name + "</span></h1>")
+    $(".sub").addClass(bot_name)
     $(".prefix").text(prefix)
 });

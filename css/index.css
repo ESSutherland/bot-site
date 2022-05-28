@@ -79,6 +79,23 @@ footer{
     width: 1300px;
 }
 
+.sub{
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+}
+
+.PreciousBot{
+    background-color: #22d2e6;
+}
+
+.ZepeBot{
+    background-color: #b321fc;
+}
+
+.Bot{
+    background-color: red;
+}
+
 #PreciousBot{
     color: #22d2e6;
 }
