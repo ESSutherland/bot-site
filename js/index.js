@@ -11,6 +11,7 @@ $(document).ready(function(){
     var animalcrossing = url.searchParams.get("animalcrossing")
     var boostmessage = url.searchParams.get("boostmessage")
     var anime = url.searchParams.get("anime")
+    var pokemon = url.searchParams.get("pokemon")
 
     if(!prefix){
         prefix=""
