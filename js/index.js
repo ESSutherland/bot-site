@@ -4,6 +4,7 @@ $(document).ready(function(){
 
     var bot_name = url.searchParams.get("bot_name")
     var prefix = "/"
+    var moderation = url.searchParams.get("moderation")
     var color = url.searchParams.get("color")
     var levels = url.searchParams.get("levels")
     var minecraft = url.searchParams.get("minecraft")
@@ -18,6 +19,9 @@ $(document).ready(function(){
     }
     if(!bot_name){
         bot_name="Bot"
+    }
+    if(moderation != 1){
+        $("#moderation-commands").hide()
     }
     if(color != 1){
         $("#color-commands").hide()

@@ -45,31 +45,6 @@
                         <td>Get information about the user.</td>
                         <td><span class="prefix"></span>whois {@User}</td>
                     </tr>
-                    <tr class="mod">
-                        <td>Lookup</td>
-                        <td>Lookup a discord user via user ID.</td>
-                        <td><span class="prefix"></span>lookup {User ID}</td>
-                    </tr>
-                    <tr class="mod">
-                        <td>Ban</td>
-                        <td>Ban a user from the server using their discord ID.</td>
-                        <td><span class="prefix"></span>ban {User ID} {Reason}</td>
-                    </tr>
-                    <tr class="mod">
-                        <td>MassBan</td>
-                        <td>Ban multiple users from the server using a username.</td>
-                        <td><span class="prefix"></span>massban {Username} {Reason}</td>
-                    </tr>
-                    <tr class="mod">
-                        <td>AutoBan</td>
-                        <td>Add a username to a list that will be auto banned upon joining the server.</td>
-                        <td><span class="prefix"></span>autoban {Username}</td>
-                    </tr>
-                    <tr class="mod">
-                        <td>UnAutoBan</td>
-                        <td>Remove a username form the auto ban list.</td>
-                        <td><span class="prefix"></span>unautoban {Username}</td>
-                    </tr>
                     <tr class="admin">
                         <td>Enable</td>
                         <td>Enables a feature module in the bot.</td>
@@ -104,6 +79,71 @@
                         <td>Status</td>
                         <td>Change the playing status of the bot to the specified message.</td>
                         <td><span class="prefix"></span>status {Message}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="moderation-commands">
+            <h2>Moderation Commands</h2>
+            <table>
+                <thead>
+                    <tr class="normal">
+                        <th>Command Name</td>
+                        <th>Command Info</td>
+                        <th>Command Format</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="mod">
+                        <td>Logs</td>
+                        <td>Allows Moderators to get message logs of a specified user via Discord ID.</td>
+                        <td><span class="prefix"></span>logs {Discord ID}</td>
+                    </tr>
+                    <tr class="mod">
+                        <td>Warn</td>
+                        <td>Allows Moderators to give users a warning</td>
+                        <td><span class="prefix"></span>warn {@User} {Reason}</td>
+                    </tr>
+                    <tr class="mod">
+                        <td>Ban</td>
+                        <td>Ban a user from the server using their discord ID.</td>
+                        <td><span class="prefix"></span>ban {User ID} {Reason}</td>
+                    </tr>
+                    <tr class="mod">
+                        <td>Standing</td>
+                        <td>Returns a list of punishments on a user and their warning points.</td>
+                        <td><span class="prefix"></span>standing {@User}</td>
+                    </tr>
+                    <tr class="mod">
+                        <td>Punishment</td>
+                        <td>Get information on a punishment via UUID.</td>
+                        <td><span class="prefix"></span>punishment {UUID}</td>
+                    </tr>
+                    <tr class="mod">
+                        <td>Remove</td>
+                        <td>Remove a punishment from a user via UUID.</td>
+                        <td><span class="prefix"></span>remove {UUID}</td>
+                    </tr>
+                    <tr class="mod">
+                        <td>Lookup</td>
+                        <td>Lookup a discord user via user ID.</td>
+                        <td><span class="prefix"></span>lookup {User ID}</td>
+                    </tr>
+                    <tr class="mod">
+                        <td>MassBan</td>
+                        <td>Ban multiple users from the server using a username.</td>
+                        <td><span class="prefix"></span>massban {Username} {Reason}</td>
+                    </tr>
+                    <tr class="mod">
+                        <td>AutoBan</td>
+                        <td>Add a username to a list that will be auto banned upon joining the server.</td>
+                        <td><span class="prefix"></span>autoban {Username}</td>
+                    </tr>
+                    <tr class="mod">
+                        <td>UnAutoBan</td>
+                        <td>Remove a username from the auto ban list.</td>
+                        <td><span class="prefix"></span>unautoban {Username}</td>
                     </tr>
                 </tbody>
             </table>
