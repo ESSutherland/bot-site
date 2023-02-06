@@ -13,6 +13,7 @@ $(document).ready(function(){
     var boostmessage = url.searchParams.get("boostmessage")
     var anime = url.searchParams.get("anime")
     var pokemon = url.searchParams.get("pokemon")
+    var seventv = url.searchParams.get("7tv")
 
     if(!prefix){
         prefix=""
@@ -52,6 +53,9 @@ $(document).ready(function(){
         $("#pokemon-commands").hide()
     }
 
+    if(seventv != 1){
+        $("#seventv-commands").hide()
+    }
 
     $("#head").html("<h1>Commands for <span id=\"" + bot_name + "\">" + bot_name + "</span></h1>")
     $(".sub").addClass(bot_name)
